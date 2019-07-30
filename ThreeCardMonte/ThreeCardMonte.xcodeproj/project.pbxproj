@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5E326422EF9863009C9AEF /* cardBackRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5E326322EF9863009C9AEF /* cardBackRed.png */; };
 		573B72F121914AF300601A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B72F021914AF300601A4F /* AppDelegate.swift */; };
 		573B72F321914AF300601A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B72F221914AF300601A4F /* ViewController.swift */; };
 		573B72F621914AF300601A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573B72F421914AF300601A4F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E5E326322EF9863009C9AEF /* cardBackRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBackRed.png; path = ../../Images/cardBackRed.png; sourceTree = "<group>"; };
 		573B72ED21914AF300601A4F /* ThreeCardMonte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeCardMonte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573B72F021914AF300601A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573B72F221914AF300601A4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		573B72EF21914AF300601A4F /* ThreeCardMonte */ = {
 			isa = PBXGroup;
 			children = (
+				4E5E326322EF9863009C9AEF /* cardBackRed.png */,
 				573B72F021914AF300601A4F /* AppDelegate.swift */,
 				573B72F221914AF300601A4F /* ViewController.swift */,
 				573B72F421914AF300601A4F /* Main.storyboard */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5E326422EF9863009C9AEF /* cardBackRed.png in Resources */,
 				573B72FB21914AF500601A4F /* LaunchScreen.storyboard in Resources */,
 				573B72F821914AF500601A4F /* Assets.xcassets in Resources */,
 				573B72F621914AF300601A4F /* Main.storyboard in Resources */,

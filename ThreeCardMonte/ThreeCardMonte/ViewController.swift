@@ -14,7 +14,16 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
-
-
+    
+    @IBAction func button1(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func button2(_ sender: UIButton) {
+    }
+    
+    @IBAction func button3(_ sender: UIButton) {
+    }
+    
 }
 
