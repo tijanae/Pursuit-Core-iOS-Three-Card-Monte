@@ -17,46 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-fF-Nd9">
-                                <rect key="frame" x="263" y="262" width="97" height="168"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQX-pJ-fME">
+                                <rect key="frame" x="20" y="266" width="118" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cardBackRed.png"/>
                                 <connections>
-                                    <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ze-ZO-ope"/>
+                                    <action selector="threeCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="neP-Eu-rMm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X58-dy-BRk">
-                                <rect key="frame" x="185" y="141" width="42" height="21"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-Lm-TyY">
+                                <rect key="frame" x="148" y="266" width="118" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cardBackRed.png"/>
+                                <connections>
+                                    <action selector="threeCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRF-4W-lD1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smi-z1-EqE">
+                                <rect key="frame" x="276" y="266" width="118" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cardBackRed.png"/>
+                                <connections>
+                                    <action selector="threeCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="se1-c4-a3L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Your King!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4k-to-ZVv">
+                                <rect key="frame" x="58" y="499" width="298" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHn-Di-6HF">
-                                <rect key="frame" x="158" y="262" width="97" height="168"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uee-LT-LBp">
+                                <rect key="frame" x="161" y="652" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cardBackRed.png"/>
+                                <state key="normal" title="Shuffle Cards">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foj-C3-wVq"/>
+                                    <action selector="playSomeMoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAi-el-8a8"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5z-DQ-mPs">
-                                <rect key="frame" x="53" y="262" width="97" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cardBackRed.png"/>
-                                <connections>
-                                    <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GGq-Oj-7VM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7f-gy-BpN">
-                                <rect key="frame" x="171" y="560" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play Again"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.94109756449500204" blue="0.75036682724157644" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.13963944213344359" green="0.45239637305699487" blue="0.0087365307490851075" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardOne" destination="iQX-pJ-fME" id="eJP-67-dao"/>
+                        <outlet property="cardThree" destination="Smi-z1-EqE" id="v1D-lh-1x7"/>
+                        <outlet property="cardTwo" destination="oKP-Lm-TyY" id="xoL-xm-td1"/>
+                        <outlet property="winingLabel" destination="R4k-to-ZVv" id="V94-yS-JkU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

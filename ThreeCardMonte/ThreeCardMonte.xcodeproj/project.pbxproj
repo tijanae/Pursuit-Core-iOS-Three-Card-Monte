@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E5E326422EF9863009C9AEF /* cardBackRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5E326322EF9863009C9AEF /* cardBackRed.png */; };
+		4EACECF02300D83D000278E3 /* threeCardMonte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACECEF2300D83D000278E3 /* threeCardMonte.swift */; };
 		573B72F121914AF300601A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B72F021914AF300601A4F /* AppDelegate.swift */; };
 		573B72F321914AF300601A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B72F221914AF300601A4F /* ViewController.swift */; };
 		573B72F621914AF300601A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573B72F421914AF300601A4F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		4E5E326322EF9863009C9AEF /* cardBackRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardBackRed.png; path = ../../Images/cardBackRed.png; sourceTree = "<group>"; };
+		4EACECEF2300D83D000278E3 /* threeCardMonte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeCardMonte.swift; sourceTree = "<group>"; };
 		573B72ED21914AF300601A4F /* ThreeCardMonte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeCardMonte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573B72F021914AF300601A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573B72F221914AF300601A4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				573B72F021914AF300601A4F /* AppDelegate.swift */,
 				573B72F221914AF300601A4F /* ViewController.swift */,
 				573B72F421914AF300601A4F /* Main.storyboard */,
+				4EACECEF2300D83D000278E3 /* threeCardMonte.swift */,
 				573B72F721914AF500601A4F /* Assets.xcassets */,
 				573B72F921914AF500601A4F /* LaunchScreen.storyboard */,
 				573B72FC21914AF500601A4F /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				573B72F321914AF300601A4F /* ViewController.swift in Sources */,
 				573B72F121914AF300601A4F /* AppDelegate.swift in Sources */,
+				4EACECF02300D83D000278E3 /* threeCardMonte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
