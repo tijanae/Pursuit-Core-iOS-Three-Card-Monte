@@ -22,48 +22,62 @@ class ViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-  
-    cards.randomizedCards()
     
   }
+    func disableAllButtons () {
+        cardOne.isEnabled = false
+        cardTwo.isEnabled = false
+        cardThree.isEnabled = false
+    }
     @IBAction func threeCards(_ sender: UIButton) {
-        if sender.tag == 0 {
-            if cards.card1 == 2 {
-                cardOne.setImage(UIImage(named: "kingCard"), for: .normal)
-                winingLabel.text = "You Win!"
-                cardTwo.isEnabled = false
-                cardThree.isEnabled = false
-            } else if cards.card1 != 2 {
-                cardOne.setImage(UIImage(named: "threeCard"), for: .normal)
-                winingLabel.text = "Better Luck Next Time"
-                cardTwo.isEnabled = false
-                cardThree.isEnabled = false
-            }
-        } else if sender.tag == 1 {
-            if cards.card2 == 2{
-                cardTwo.setImage(UIImage(named: "kingCard"), for: .normal)
-                winingLabel.text = "You Win!"
-                cardOne.isEnabled = false
-                cardThree.isEnabled = false
-            }else if cards.card2 != 2 {
-                cardTwo.setImage(UIImage(named: "threeCard"), for: .normal)
-                winingLabel.text = "Better Luck Next Time"
-                cardOne.isEnabled = false
-                cardThree.isEnabled = false
-            }
-        } else if sender.tag == 2 {
-            if cards.card3 == 2 {
-                cardThree.setImage(UIImage(named: "kingCard"), for: .normal)
-                winingLabel.text = "You Win!"
-                cardOne.isEnabled = false
-                cardTwo.isEnabled = false
-            }else if cards.card3 != 2{
-                cardThree.setImage(UIImage(named: "threeCard"), for: .normal)
-                winingLabel.text = "Better Luck Next Time"
-                cardOne.isEnabled = false
-                cardTwo.isEnabled = false
-            }
+        if cards.checkingWin(guess: sender.tag) {
+            winingLabel.text = "You Win!"
+            sender.setImage(UIImage(named: "kingCard"), for: .normal)
+            disableAllButtons()
+          
+        } else {
+            sender.setImage(UIImage(named: "threeCard"), for: .normal)
+            winingLabel.text = "Better Luck Next Time"
+            disableAllButtons()
         }
+        
+//        sender.tag == 0 {
+//            if cards.card1 == 2 {
+//                cardOne.setImage(UIImage(named: "kingCard"), for: .normal)
+//                winingLabel.text = "You Win!"
+//                cardTwo.isEnabled = false
+//                cardThree.isEnabled = false
+//            } else if cards.card1 != 2 {
+//                cardOne.setImage(UIImage(named: "threeCard"), for: .normal)
+//                winingLabel.text = "Better Luck Next Time"
+//                cardTwo.isEnabled = false
+//                cardThree.isEnabled = false
+//            }
+//        } else if sender.tag == 1 {
+//            if cards.card2 == 2{
+//                cardTwo.setImage(UIImage(named: "kingCard"), for: .normal)
+//                winingLabel.text = "You Win!"
+//                cardOne.isEnabled = false
+//                cardThree.isEnabled = false
+//            }else if cards.card2 != 2 {
+//                cardTwo.setImage(UIImage(named: "threeCard"), for: .normal)
+//                winingLabel.text = "Better Luck Next Time"
+//                cardOne.isEnabled = false
+//                cardThree.isEnabled = false
+//            }
+//        } else if sender.tag == 2 {
+//            if cards.card3 == 2 {
+//                cardThree.setImage(UIImage(named: "kingCard"), for: .normal)
+//                winingLabel.text = "You Win!"
+//                cardOne.isEnabled = false
+//                cardTwo.isEnabled = false
+//            }else if cards.card3 != 2{
+//                cardThree.setImage(UIImage(named: "threeCard"), for: .normal)
+//                winingLabel.text = "Better Luck Next Time"
+//                cardOne.isEnabled = false
+//                cardTwo.isEnabled = false
+//            }
+//        }
     }
     
     
@@ -74,7 +88,7 @@ class ViewController: UIViewController {
         cardTwo.isEnabled = true
         cardThree.setImage(UIImage(named: "cardBackRed"), for: .normal)
         cardThree.isEnabled = true
-        cards.randomizedCards()
+        cards = CardStatus()
         
     }
     

@@ -13,8 +13,9 @@ struct CardStatus {
     var card1 = 0
     var card2 = 0
     var card3 = 0
+    private let kingValue = 2
     
-    mutating func randomizedCards( ) {
+    init( ) {
         let generator = 0..<3
         let shuffledGenerator = generator.shuffled()
         print(shuffledGenerator)
@@ -26,7 +27,10 @@ struct CardStatus {
         print(card3)
         // we need to get the images to change 
     }
-    
+    func checkingWin (guess: Int) -> Bool{
+        let cards = [card1, card2, card3]
+        return cards[guess] == 2
+    }
     
 }
 
